@@ -1,0 +1,17 @@
+name: Deploy App to Github Pages
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Deploy react app to Github Pages
+      - uses: tanwanimohit/deploy-react-to-ghpages@v1.0.1
