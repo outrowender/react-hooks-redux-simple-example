@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { ChangeCharacterAction } from "../state/Actions";
+import { ChangeCharacterAction } from "../redux/Actions";
 
 function List() {
   const personagens = useSelector((state) => state.characters);
